@@ -23,13 +23,15 @@
         }
 
         %>
-        <% String str = response.encodeRedirectURL("car.jsp"); %>
+        <%
+            String str = response.encodeRedirectURL("car.jsp");
+        %>
 
-        <br><form action="<%=str%>>" method="post" name="form">
+        <br><form action="<%=str%>" method="post" name="form">
             <input type="submit" value="继续购物">
     </form>
     <% String str1 = response.encodeRedirectURL("selectRemovedGoods.jsp"); %>
-        <br><form action="<%=str1%>>" method="post" name="form">
+        <br><form action="<%=str1%>" method="post" name="form">
         <input type="submit" value="修改购物车的货物">
     </form>
 </font>

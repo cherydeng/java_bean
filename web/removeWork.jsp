@@ -32,7 +32,7 @@
         }
 
     %>
-    <% String str1 = response.encodeRedirectURL("car1.jsp"); %>
+    <% String str1 = response.encodeRedirectURL("car.jsp"); %>
     <form action="<%=str1%>" method="post" name="form">
         <input type="submit" value="继续货物">
     </form>

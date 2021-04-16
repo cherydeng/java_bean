@@ -36,7 +36,7 @@ public class Car implements Serializable{
     }
 
     public void add(){
-        String str = "Name："+item+" Mount:"+mount+"  Unit:"+unit;
+        String str = "Name:"+item+" Mount:"+mount+"  Unit:"+unit;
 
         list.put(item,str);
 
