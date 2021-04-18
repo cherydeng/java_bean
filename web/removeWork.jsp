@@ -15,7 +15,7 @@
         if(name == null){
             name = "";
         }
-        byte c[] = name.getBytes("ISO-8859-1");
+        byte c[] = name.getBytes("utf-8");
         name = new String(c);
         car1.delete(name);
         out.print("您删除了货物"+name);
@@ -26,7 +26,7 @@
         Enumeration enume = list.elements();
         while (enume.hasMoreElements()) {
             String goods = (String) enume.nextElement();
-            byte b[] = goods.getBytes("ISO-8859-1");
+            byte b[] = goods.getBytes("utf-8");
             goods = new String(b);
             out.print("<BR>" + goods);
         }

@@ -47,7 +47,7 @@
         Enumeration enume = list.elements();
         while (enume.hasMoreElements()) {
             String goods = (String) enume.nextElement();
-            byte b[] = goods.getBytes("ISO-8859-1");
+            byte b[] = goods.getBytes("utf-8");
             goods = new String(b);
             out.print("<BR>" + goods);
         }
