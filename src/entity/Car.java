@@ -7,7 +7,7 @@ public class Car implements Serializable{
     Hashtable list =  new Hashtable();
     String item = "welcome";
     int mount = 0;
-    String unit = null;
+    String unit = "!";
 
     public Car(){}
 
@@ -36,9 +36,11 @@ public class Car implements Serializable{
     }
 
     public void add(){
-        String str = "Name:"+item+" Mount:"+mount+"  Unit:"+unit;
-
-        list.put(item,str);
+        if(mount==0){
+            String str = "「" + item + "」: " + mount + unit;
+            list.put(item,str);
+        }
+        
 
     }
 
